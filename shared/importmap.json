@@ -1,0 +1,15 @@
+{
+  "imports": {
+    "react": "./shared/react.js",
+    "react/jsx-runtime": "./shared/jsx-runtime.js",
+    "react-dom": "./shared/react-dom.js",
+    "react-dom/client": "./shared/react-dom-client.js",
+    "three": "./shared/three.js",
+    "pixi.js": "./shared/pixi.js",
+    "@wgf/core": "./shared/wgf-core.js",
+    "@wgf/net": "./shared/wgf-net.js",
+    "@wgf/ui": "./shared/wgf-ui.js",
+    "@wgf/render-three": "./shared/wgf-render-three.js",
+    "@wgf/render-pixi": "./shared/wgf-render-pixi.js"
+  }
+}
