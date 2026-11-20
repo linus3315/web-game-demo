@@ -16,7 +16,16 @@
       "id": "match3",
       "name": "消消乐",
       "description": "8×8 棋盘。交换相邻方块，三连消除，连击会把分数抬上去。",
+      "tip": "交换相邻的两格。",
       "howToPlay": "拖动或点选相邻两格交换。四个一排变成整行或整列消除，五个或 L/T 形变成炸弹。在步数用完前达到目标分。",
+      "copy": {
+        "en": {
+          "name": "Match 3",
+          "description": "An 8×8 board. Swap neighbors, match three, and climb the score.",
+          "howToPlay": "Drag or tap two neighboring tiles to swap. Four in a row clears a line. Five, or an L or T, makes a bomb. Reach the target before you run out of moves.",
+          "tip": "Swap two neighboring tiles."
+        }
+      },
       "cover": "match3",
       "art": {
         "background": "#241628",
@@ -111,7 +120,7 @@
         "radius": 18,
         "font": "sans"
       },
-      "remote": "games/match3/remote.98553cd1.js",
+      "remote": "games/match3/remote.733d7335.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
@@ -123,7 +132,16 @@
       "id": "memory",
       "name": "翻牌记忆",
       "description": "十六张牌，八对图案。步数和时间都会吃掉分数，少错才能上榜。",
+      "tip": "相同的两张会留下。",
       "howToPlay": "点开两张牌。图案相同就留下，不同就盖回去。清空棋盘即过关。",
+      "copy": {
+        "en": {
+          "name": "Memory",
+          "description": "Sixteen cards, eight pairs. Moves and time both spend the score.",
+          "howToPlay": "Flip two cards. A match stays up. A miss turns back over. Clear the board to finish.",
+          "tip": "Matching cards stay face up."
+        }
+      },
       "cover": "memory",
       "art": {
         "background": "#1c1814",
@@ -264,7 +282,7 @@
         "radius": 16,
         "font": "serif"
       },
-      "remote": "games/memory/remote.bd46265c.js",
+      "remote": "games/memory/remote.84dd2f23.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
@@ -276,7 +294,16 @@
       "id": "neon-rush",
       "name": "霓虹疾走",
       "description": "三条赛道，越开越快。变道躲开方块，跳过矮栏，把金币吃干净。",
+      "tip": "变道躲开方块，跳过矮栏。",
       "howToPlay": "← → 或 A / D 变道，↑、W 或空格跳跃。手机可滑动，也可以用屏幕按钮。",
+      "copy": {
+        "en": {
+          "name": "Neon Rush",
+          "description": "Three lanes, and it only gets faster. Dodge blocks, hop barriers, collect coins.",
+          "howToPlay": "Arrow keys or A / D change lanes. Up, W, or Space jumps. On a phone, swipe or use the buttons.",
+          "tip": "Change lanes to dodge, and jump the low barriers."
+        }
+      },
       "cover": "neon-rush",
       "art": {
         "background": "#100e16",
@@ -341,7 +368,7 @@
         "radius": 10,
         "font": "sans"
       },
-      "remote": "games/neon-rush/remote.a96b9077.js",
+      "remote": "games/neon-rush/remote.0c70e19b.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
@@ -353,7 +380,16 @@
       "id": "lucky-slots",
       "name": "幸运拉霸",
       "description": "五轴三行、二十条线。娱乐积分，不能兑换，也不能充值。",
+      "tip": "娱乐积分，不能兑换。",
       "howToPlay": "选择注额后旋转。百搭可替代普通图案，三个及以上夺宝送免费旋转。服务器在线时由服务器开奖，否则在这台设备上本地开奖。",
+      "copy": {
+        "en": {
+          "name": "Lucky Slots",
+          "description": "Five reels, three rows, twenty lines. Play credits only.",
+          "howToPlay": "Pick a bet and spin. Wilds stand in for regular symbols. Three or more scatters award free spins. When the server is online it draws the result; otherwise this device does.",
+          "tip": "Play credits only. Nothing to cash out."
+        }
+      },
       "cover": "slots",
       "art": {
         "background": "#2a140c",
@@ -422,7 +458,7 @@
         "radius": 18,
         "font": "serif"
       },
-      "remote": "games/lucky-slots/remote.84496368.js",
+      "remote": "games/lucky-slots/remote.fedb244c.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
@@ -434,7 +470,16 @@
       "id": "starfall",
       "name": "摘星",
       "description": "接住落下的金星，躲开红色流星。漏掉三颗金星就结束。",
+      "tip": "接住金星，躲开红色的。",
       "howToPlay": "移动鼠标或手指，也可以用 ← → 控制篮子。金色加分，红色扣一条命。",
+      "copy": {
+        "en": {
+          "name": "Starfall",
+          "description": "Catch falling gold stars and dodge the red ones. Three missed stars ends the run.",
+          "howToPlay": "Move with the pointer or the arrow keys. Gold scores, red costs a life.",
+          "tip": "Catch the gold stars. Dodge the red ones."
+        }
+      },
       "cover": "starfall",
       "art": {
         "background": "#14182c",
@@ -520,7 +565,7 @@
         "radius": 20,
         "font": "serif"
       },
-      "remote": "games/starfall/remote.a0ef428c.js",
+      "remote": "games/starfall/remote.ec6c7693.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
