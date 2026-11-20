@@ -47,7 +47,7 @@
 
 .wgf-btn-primary {
   background: var(--wgf-accent);
-  color: #1a0b06;
+  color: var(--wgf-accent-ink, #1a0b06);
 }
 
 .wgf-btn-ghost {
@@ -146,11 +146,160 @@
   min-width: 180px;
   max-width: 320px;
   padding: 12px 14px;
-  border-radius: 14px;
-  background: var(--wgf-ink);
-  color: #1b1612;
+  border-radius: var(--wgf-radius);
+  background: rgba(20, 18, 15, 0.9);
+  color: var(--wgf-ink);
+  border: 1px solid var(--wgf-line);
   box-shadow: var(--wgf-shadow);
+  backdrop-filter: blur(14px);
   font-weight: 650;
+}
+
+.wgf-chrome {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  font-family: var(--wgf-overlay-font, var(--wgf-sans));
+}
+
+.wgf-chrome-top {
+  position: absolute;
+  top: calc(10px + env(safe-area-inset-top));
+  left: calc(10px + env(safe-area-inset-left));
+  right: calc(10px + env(safe-area-inset-right));
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.wgf-menu-btn {
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 4px;
+  border-radius: calc(var(--wgf-radius) * 0.55);
+  border: 1px solid rgba(246, 241, 231, 0.22);
+  background: rgba(16, 14, 18, 0.46);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(16px);
+  cursor: pointer;
+}
+
+.wgf-menu-btn span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--wgf-ink);
+}
+
+.wgf-hud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
+  pointer-events: none;
+}
+
+.wgf-chip {
+  display: grid;
+  gap: 1px;
+  min-width: 64px;
+  padding: 6px 10px 7px;
+  border-radius: calc(var(--wgf-radius) * 0.55);
+  background: rgba(16, 14, 18, 0.5);
+  border: 1px solid rgba(246, 241, 231, 0.16);
+  border-left: 3px solid var(--wgf-accent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(14px);
+  pointer-events: none;
+}
+
+.wgf-chip span,
+.wgf-menu-user small {
+  color: var(--wgf-faint);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.wgf-chip strong {
+  font-variant-numeric: tabular-nums;
+  font-size: 1rem;
+  color: var(--wgf-ink);
+  max-width: 11rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wgf-message-chip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(18px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  margin: 0;
+  max-width: min(420px, calc(100% - 24px));
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(16, 14, 18, 0.55);
+  border: 1px solid rgba(246, 241, 231, 0.14);
+  backdrop-filter: blur(12px);
+  color: var(--wgf-ink);
+  font-size: 0.85rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.wgf-menu-sheet {
+  pointer-events: auto;
+  position: absolute;
+  top: calc(62px + env(safe-area-inset-top));
+  left: calc(10px + env(safe-area-inset-left));
+  width: min(300px, calc(100vw - 20px - env(safe-area-inset-left) - env(safe-area-inset-right)));
+  max-height: calc(100dvh - 80px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  overflow: auto;
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border-radius: var(--wgf-radius);
+  background: rgba(18, 16, 14, 0.78);
+  border: 1px solid rgba(246, 241, 231, 0.18);
+  box-shadow: var(--wgf-shadow);
+  backdrop-filter: blur(18px);
+  touch-action: pan-y;
+}
+
+.wgf-menu-sheet .wgf-btn {
+  width: 100%;
+}
+
+.wgf-menu-user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--wgf-line);
+}
+
+.wgf-menu-user div {
+  display: grid;
+  min-width: 0;
+}
+
+.wgf-menu-user strong {
+  color: var(--wgf-ink);
+}
+
+.wgf-menu-title {
+  margin: 0;
+  font-family: var(--wgf-overlay-font, var(--wgf-serif));
+  color: var(--wgf-glow);
+  font-size: 1.05rem;
 }
 
 .wgf-loading {
@@ -241,12 +390,25 @@
   font-size: 1.15rem;
 }
 
+@media (max-height: 420px) {
+  .wgf-menu-sheet {
+    top: auto;
+    bottom: calc(10px + env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 70px);
+  }
+
+  .wgf-message-chip {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .wgf-spinner {
     animation: none;
   }
 
-  .wgf-btn {
+  .wgf-btn,
+  .wgf-menu-sheet {
     transition: none;
   }
 }

@@ -5,12 +5,12 @@ import { createRoot as Y } from "react-dom/client";
 function Z() {
   const t = [];
   for (let e = 0; e < 8; e += 1) {
-    const s = e % 4, a = Math.floor(e / 4), i = 48 + s * 58, l = 28 + a * 68, y = e === 2 || e === 6;
+    const s = e % 4, a = Math.floor(e / 4), i = 48 + s * 58, f = 28 + a * 68, y = e === 2 || e === 6;
     t.push({
       tag: "rect",
       attrs: {
         x: i,
-        y: l,
+        y: f,
         width: 46,
         height: 58,
         rx: 8,
@@ -20,7 +20,7 @@ function Z() {
       }
     }), y && t.push({
       tag: "circle",
-      attrs: { cx: i + 23, cy: l + 29, r: 8, fill: e === 2 ? "#ff4d1c" : "#5b6cff" }
+      attrs: { cx: i + 23, cy: f + 29, r: 8, fill: e === 2 ? "#ff4d1c" : "#5b6cff" }
     });
   }
   return { background: "#1c1814", shapes: t };
@@ -34,7 +34,8 @@ const g = {
   art: Z(),
   renderer: "dom",
   controls: "board",
-  tags: ["记忆"]
+  tags: ["记忆"],
+  theme: { accent: "#f0b429", accentInk: "#2a1c06", glow: "#ff4d1c", radius: 16, font: "serif" }
 }, G = ["moon", "star", "bolt", "drop", "leaf", "gem", "bell", "heart"];
 function ue() {
   let t = null;
@@ -61,7 +62,7 @@ function x({ ctx: t }) {
   return w(() => t.events.on("game:restart", () => s((a) => a + 1)), [t]), /* @__PURE__ */ u(ee, { ctx: t }, e);
 }
 function ee({ ctx: t }) {
-  const e = V(() => re(te()), []), [s, a] = m([]), [i, l] = m(() => /* @__PURE__ */ new Set()), [y, U] = m(0), [T, B] = m(0), [_, L] = m(!1), b = h(!1), S = h(!1), v = h(J(g.id)), N = h(0), z = h(0), E = h(0), [q, K] = m(0), C = h(0), [O, $] = m(!1);
+  const e = V(() => re(te()), []), [s, a] = m([]), [i, f] = m(() => /* @__PURE__ */ new Set()), [y, U] = m(0), [T, B] = m(0), [_, L] = m(!1), b = h(!1), S = h(!1), v = h(J(g.id)), N = h(0), z = h(0), E = h(0), [q, K] = m(0), C = h(0), [O, $] = m(!1);
   w(() => (p(t.store, {
     id: g.id,
     status: "ready",
@@ -90,15 +91,15 @@ function ee({ ctx: t }) {
       const n = r.target;
       if (n instanceof HTMLElement && (n.tagName === "INPUT" || n.tagName === "TEXTAREA" || n.tagName === "SELECT"))
         return;
-      const f = e.length;
-      r.key === "ArrowRight" ? c(1, f) : r.key === "ArrowLeft" ? c(-1, f) : r.key === "ArrowDown" ? c(4, f) : r.key === "ArrowUp" ? c(-4, f) : (r.key === "Enter" || r.key === " ") && (r.preventDefault(), H(C.current));
+      const l = e.length;
+      r.key === "ArrowRight" ? c(1, l) : r.key === "ArrowLeft" ? c(-1, l) : r.key === "ArrowDown" ? c(4, l) : r.key === "ArrowUp" ? c(-4, l) : (r.key === "Enter" || r.key === " ") && (r.preventDefault(), I(C.current));
     }, c = (r, n) => {
       C.current = (C.current + r + n) % n, K(C.current);
     };
     return window.addEventListener("keydown", o), () => window.removeEventListener("keydown", o);
   });
   const W = A(y, T);
-  function H(o) {
+  function I(o) {
     if (S.current || _) return;
     const c = t.store.getState().game.status;
     if (c === "paused" || c === "over") return;
@@ -107,10 +108,10 @@ function ee({ ctx: t }) {
     b.current || (b.current = !0, p(t.store, { status: "running", message: "" }));
     const n = [...s, o];
     if (a(n), n.length < 2) return;
-    const f = e[n[0] ?? -1], I = e[n[1] ?? -1], M = y + 1;
-    if (z.current = M, U(M), D(t, M, N.current, v.current), f && I && f.icon === I.icon) {
+    const l = e[n[0] ?? -1], H = e[n[1] ?? -1], M = y + 1;
+    if (z.current = M, U(M), D(t, M, N.current, v.current), l && H && l.icon === H.icon) {
       const R = new Set(i);
-      if (R.add(f.icon), l(R), a([]), R.size === G.length) {
+      if (R.add(l.icon), f(R), a([]), R.size === G.length) {
         S.current = !0, b.current = !1;
         const k = A(M, N.current), P = Q(g.id, k), X = k > v.current && k > 0;
         p(t.store, {
@@ -161,7 +162,7 @@ function ee({ ctx: t }) {
           "aria-label": r ? o.icon : "盖着的牌",
           "aria-pressed": r,
           disabled: i.has(o.icon),
-          onClick: () => H(c),
+          onClick: () => I(c),
           children: /* @__PURE__ */ d("span", { className: "memory-card-inner", children: [
             /* @__PURE__ */ u("span", { className: "memory-face memory-back" }),
             /* @__PURE__ */ u("span", { className: "memory-face memory-front", children: ne(o.icon) })
@@ -173,9 +174,9 @@ function ee({ ctx: t }) {
   ] });
 }
 function D(t, e, s, a, i) {
-  const l = A(e, s);
+  const f = A(e, s);
   p(t.store, {
-    score: l,
+    score: f,
     detail: `步数 ${e} · ${s}s`,
     highScore: Math.max(a, a)
   });
@@ -192,8 +193,8 @@ function te() {
 function re(t) {
   const e = [...t];
   for (let s = e.length - 1; s > 0; s -= 1) {
-    const a = Math.floor(Math.random() * (s + 1)), i = e[s], l = e[a];
-    !i || !l || (e[s] = l, e[a] = i);
+    const a = Math.floor(Math.random() * (s + 1)), i = e[s], f = e[a];
+    !i || !f || (e[s] = f, e[a] = i);
   }
   return e;
 }

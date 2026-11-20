@@ -104,7 +104,14 @@
         "消除",
         "触屏"
       ],
-      "remote": "games/match3/remote.852005c9.js",
+      "theme": {
+        "accent": "#ff4d6d",
+        "accentInk": "#2a0610",
+        "glow": "#b388ff",
+        "radius": 18,
+        "font": "sans"
+      },
+      "remote": "games/match3/remote.98553cd1.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
@@ -250,13 +257,20 @@
       "tags": [
         "记忆"
       ],
-      "remote": "games/memory/remote.321a318c.js",
+      "theme": {
+        "accent": "#f0b429",
+        "accentInk": "#2a1c06",
+        "glow": "#ff4d1c",
+        "radius": 16,
+        "font": "serif"
+      },
+      "remote": "games/memory/remote.bd46265c.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "react": "18.3.1"
       },
-      "css": "games/memory/remote.e24b593e.css"
+      "css": "games/memory/remote.5eac6975.css"
     },
     {
       "id": "neon-rush",
@@ -320,7 +334,14 @@
         "反应",
         "无尽"
       ],
-      "remote": "games/neon-rush/remote.b04ecfa2.js",
+      "theme": {
+        "accent": "#1ad8ff",
+        "accentInk": "#041018",
+        "glow": "#ff3d8a",
+        "radius": 10,
+        "font": "sans"
+      },
+      "remote": "games/neon-rush/remote.a96b9077.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
@@ -394,13 +415,20 @@
         "拉霸",
         "联网"
       ],
-      "remote": "games/lucky-slots/remote.672c8633.js",
+      "theme": {
+        "accent": "#ffb703",
+        "accentInk": "#2a1408",
+        "glow": "#ff5a1f",
+        "radius": 18,
+        "font": "serif"
+      },
+      "remote": "games/lucky-slots/remote.84496368.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/lucky-slots/remote.e8720319.css"
+      "css": "games/lucky-slots/remote.85246b93.css"
     },
     {
       "id": "starfall",
@@ -485,7 +513,14 @@
         "反应",
         "2D"
       ],
-      "remote": "games/starfall/remote.bbedbb5f.js",
+      "theme": {
+        "accent": "#ffd56a",
+        "accentInk": "#2a1c06",
+        "glow": "#ff5a1f",
+        "radius": 20,
+        "font": "serif"
+      },
+      "remote": "games/starfall/remote.a0ef428c.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",

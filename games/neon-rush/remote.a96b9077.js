@@ -34,7 +34,7 @@ const D = {
     { tag: "polygon", attrs: { points: "160,78 174,108 160,100 146,108", fill: "#e8fbff" } },
     { tag: "circle", attrs: { cx: 160, cy: 112, r: 4, fill: "#ff7a3c" } }
   ]
-}, p = {
+}, f = {
   id: "neon-rush",
   name: "霓虹疾走",
   description: "三条赛道，越开越快。变道躲开方块，跳过矮栏，把金币吃干净。",
@@ -43,7 +43,8 @@ const D = {
   art: D,
   renderer: "three",
   controls: "lanes",
-  tags: ["反应", "无尽"]
+  tags: ["反应", "无尽"],
+  theme: { accent: "#1ad8ff", accentInk: "#041018", glow: "#ff3d8a", radius: 10, font: "sans" }
 }, g = [-2.3, 0, 2.3];
 class K {
   constructor(e) {
@@ -107,10 +108,10 @@ class K {
         u.position.set(d, 0.025, 4 - t * 4), s.add(u), this.dashes.push(u);
       }
     }
-    const f = new n.MeshBasicMaterial({ color: 3659519 });
+    const p = new n.MeshBasicMaterial({ color: 3659519 });
     this.arches = [];
     for (let t = 0; t < 6; t += 1) {
-      const h = new n.Mesh(new n.TorusGeometry(3.3, 0.035, 8, 24), f);
+      const h = new n.Mesh(new n.TorusGeometry(3.3, 0.035, 8, 24), p);
       h.position.set(0, 2.2, -8 - t * 16), s.add(h), this.arches.push(h);
     }
     const m = new Float32Array(240);
@@ -319,7 +320,7 @@ function X() {
   let i = null, e = null, s = null;
   const o = [];
   let a = 0, l = !1, c = "";
-  const f = { laneDelta: 0, jump: !1 }, m = {
+  const p = { laneDelta: 0, jump: !1 }, m = {
     id: "over",
     enter() {
     },
@@ -333,13 +334,13 @@ function X() {
     },
     input() {
       const t = s;
-      !t || !i || ($(t, f), i.status === "ready" && j(t, f) && b(t));
+      !t || !i || ($(t, p), i.status === "ready" && j(t, p) && b(t));
     },
     fixedUpdate(t) {
       const h = s;
       if (!h || !i || i.status !== "running") return;
-      const d = i.simulate(f, t);
-      f.laneDelta = 0, f.jump = !1, y(h, !1), d && (k(h), e?.set(m));
+      const d = i.simulate(p, t);
+      p.laneDelta = 0, p.jump = !1, y(h, !1), d && (k(h), e?.set(m));
     }
   };
   function b(t) {
@@ -352,7 +353,7 @@ function X() {
     c = P;
     const T = Math.max(a, d);
     w(t.store, {
-      id: p.id,
+      id: f.id,
       status: i.status === "over" ? "over" : "running",
       score: d,
       highScore: T,
@@ -364,20 +365,20 @@ function X() {
   function k(t) {
     if (l || !i) return;
     l = !0;
-    const h = Math.floor(i.score), d = L(p.id, h), u = h > a && h > 0;
+    const h = Math.floor(i.score), d = L(f.id, h), u = h > a && h > 0;
     w(t.store, {
-      id: p.id,
+      id: f.id,
       status: "over",
       score: h,
       highScore: d,
       message: "撞上了。再来一局？",
       detail: i.combo > 1 ? `连击 ×${i.combo}` : `速度 ${Math.round(i.speed)}`,
       combo: i.combo
-    }), t.events.emit("game:over", { gameId: p.id, score: h, best: d, isRecord: u }), v(t.audio, "crash");
+    }), t.events.emit("game:over", { gameId: f.id, score: h, best: d, isRecord: u }), v(t.audio, "crash");
   }
   async function S(t) {
-    l = !1, a = x(p.id), c = "", i?.reset(), e?.getCurrent()?.id !== "run" && await e?.set(M), i?.begin(), i && w(t.store, {
-      id: p.id,
+    l = !1, a = x(f.id), c = "", i?.reset(), e?.getCurrent()?.id !== "run" && await e?.set(M), i?.begin(), i && w(t.store, {
+      id: f.id,
       status: "running",
       score: 0,
       highScore: a,
@@ -386,14 +387,14 @@ function X() {
       combo: 0
     });
   }
-  return B(p, {
+  return B(f, {
     async onMount(t) {
-      t.signal.aborted || (s = t, t.container.setAttribute("data-wgf-game", "wgf-game:neon"), i = new K(t.container), t.track(() => i?.dispose()), !t.signal.aborted && (i.onLane = () => v(t.audio, "lane"), i.onJump = () => v(t.audio, "jump"), i.onCoin = () => v(t.audio, "coin"), e = new I(t.loop), e.attach(), a = x(p.id), w(t.store, {
-        id: p.id,
+      t.signal.aborted || (s = t, t.container.setAttribute("data-wgf-game", "wgf-game:neon"), i = new K(t.container), t.track(() => i?.dispose()), !t.signal.aborted && (i.onLane = () => v(t.audio, "lane"), i.onJump = () => v(t.audio, "jump"), i.onCoin = () => v(t.audio, "coin"), e = new I(t.loop), e.attach(), a = x(f.id), w(t.store, {
+        id: f.id,
         status: "ready",
         score: 0,
         highScore: a,
-        message: p.howToPlay,
+        message: f.howToPlay,
         detail: "",
         combo: 0
       }), o.push(
@@ -428,7 +429,7 @@ function v(i, e) {
 }
 export {
   X as createGame,
-  p as manifest
+  f as manifest
 };
 
 export const remoteCompat={"framework":"0.1.0","peers":{"@wgf/core":"0.1.0","@wgf/render-three":"0.1.0","three":"0.170.0"}};
