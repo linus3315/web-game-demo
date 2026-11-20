@@ -11,6 +11,8 @@
     "@wgf/render-three": "0.1.0",
     "@wgf/render-pixi": "0.1.0"
   },
+  "lobby": "1.0.0",
+  "build": "4f278844b09d",
   "games": [
     {
       "id": "match3",
@@ -120,7 +122,8 @@
         "radius": 18,
         "font": "sans"
       },
-      "remote": "games/match3/remote.733d7335.js",
+      "version": "1.0.0",
+      "remote": "games/match3/1.0.0/remote.733d7335.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
@@ -282,13 +285,14 @@
         "radius": 16,
         "font": "serif"
       },
-      "remote": "games/memory/remote.84dd2f23.js",
+      "version": "1.0.0",
+      "remote": "games/memory/1.0.0/remote.84dd2f23.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "react": "18.3.1"
       },
-      "css": "games/memory/remote.5eac6975.css"
+      "css": "games/memory/1.0.0/remote.5eac6975.css"
     },
     {
       "id": "neon-rush",
@@ -368,7 +372,8 @@
         "radius": 10,
         "font": "sans"
       },
-      "remote": "games/neon-rush/remote.0c70e19b.js",
+      "version": "1.0.0",
+      "remote": "games/neon-rush/1.0.0/remote.0c70e19b.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
@@ -458,13 +463,14 @@
         "radius": 18,
         "font": "serif"
       },
-      "remote": "games/lucky-slots/remote.fedb244c.js",
+      "version": "1.0.0",
+      "remote": "games/lucky-slots/1.0.0/remote.fedb244c.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/lucky-slots/remote.85246b93.css"
+      "css": "games/lucky-slots/1.0.0/remote.85246b93.css"
     },
     {
       "id": "starfall",
@@ -565,7 +571,8 @@
         "radius": 20,
         "font": "serif"
       },
-      "remote": "games/starfall/remote.ec6c7693.js",
+      "version": "1.0.0",
+      "remote": "games/starfall/1.0.0/remote.ec6c7693.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
