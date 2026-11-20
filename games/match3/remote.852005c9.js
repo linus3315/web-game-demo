@@ -425,3 +425,5 @@ export {
   ke as createGame,
   b as manifest
 };
+
+export const remoteCompat={"framework":"0.1.0","peers":{"@wgf/core":"0.1.0","@wgf/render-pixi":"0.1.0","pixi.js":"8.23.0"}};

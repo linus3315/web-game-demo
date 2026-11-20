@@ -224,3 +224,5 @@ export {
   ue as createGame,
   g as manifest
 };
+
+export const remoteCompat={"framework":"0.1.0","peers":{"@wgf/core":"0.1.0","react":"18.3.1"}};

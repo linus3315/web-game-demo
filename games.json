@@ -1,4 +1,16 @@
 {
+  "framework": "0.1.0",
+  "peers": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "0.170.0",
+    "pixi.js": "8.23.0",
+    "@wgf/core": "0.1.0",
+    "@wgf/net": "0.1.0",
+    "@wgf/ui": "0.1.0",
+    "@wgf/render-three": "0.1.0",
+    "@wgf/render-pixi": "0.1.0"
+  },
   "games": [
     {
       "id": "match3",
@@ -92,7 +104,13 @@
         "消除",
         "触屏"
       ],
-      "remote": "games/match3/remote.js"
+      "remote": "games/match3/remote.852005c9.js",
+      "framework": "0.1.0",
+      "peers": {
+        "@wgf/core": "0.1.0",
+        "@wgf/render-pixi": "0.1.0",
+        "pixi.js": "8.23.0"
+      }
     },
     {
       "id": "memory",
@@ -232,8 +250,13 @@
       "tags": [
         "记忆"
       ],
-      "remote": "games/memory/remote.js",
-      "css": "games/memory/remote.css"
+      "remote": "games/memory/remote.321a318c.js",
+      "framework": "0.1.0",
+      "peers": {
+        "@wgf/core": "0.1.0",
+        "react": "18.3.1"
+      },
+      "css": "games/memory/remote.e24b593e.css"
     },
     {
       "id": "neon-rush",
@@ -297,7 +320,13 @@
         "反应",
         "无尽"
       ],
-      "remote": "games/neon-rush/remote.js"
+      "remote": "games/neon-rush/remote.b04ecfa2.js",
+      "framework": "0.1.0",
+      "peers": {
+        "@wgf/core": "0.1.0",
+        "@wgf/render-three": "0.1.0",
+        "three": "0.170.0"
+      }
     },
     {
       "id": "lucky-slots",
@@ -365,8 +394,13 @@
         "拉霸",
         "联网"
       ],
-      "remote": "games/lucky-slots/remote.js",
-      "css": "games/lucky-slots/remote.css"
+      "remote": "games/lucky-slots/remote.672c8633.js",
+      "framework": "0.1.0",
+      "peers": {
+        "@wgf/core": "0.1.0",
+        "@wgf/net": "0.1.0"
+      },
+      "css": "games/lucky-slots/remote.e8720319.css"
     },
     {
       "id": "starfall",
@@ -451,7 +485,13 @@
         "反应",
         "2D"
       ],
-      "remote": "games/starfall/remote.js"
+      "remote": "games/starfall/remote.bbedbb5f.js",
+      "framework": "0.1.0",
+      "peers": {
+        "@wgf/core": "0.1.0",
+        "@wgf/render-pixi": "0.1.0",
+        "pixi.js": "8.23.0"
+      }
     }
   ]
 }

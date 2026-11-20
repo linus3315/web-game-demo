@@ -1,0 +1,29 @@
+{
+  "framework": "0.1.0",
+  "peers": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "0.170.0",
+    "pixi.js": "8.23.0",
+    "@wgf/core": "0.1.0",
+    "@wgf/net": "0.1.0",
+    "@wgf/ui": "0.1.0",
+    "@wgf/render-three": "0.1.0",
+    "@wgf/render-pixi": "0.1.0"
+  },
+  "files": {
+    "react": "react.712077b0.js",
+    "react/jsx-runtime": "jsx-runtime.aef77faa.js",
+    "react-dom": "react-dom.0773c5f5.js",
+    "react-dom/client": "react-dom-client.d1aa5a88.js",
+    "three": "three.f639f0a4.js",
+    "pixi.js": "pixi.7aa2fd68.js",
+    "@wgf/core": "wgf-core.b792d312.js",
+    "@wgf/net": "wgf-net.cc31a05c.js",
+    "@wgf/ui": "wgf-ui.78a673f8.js",
+    "@wgf/render-three": "wgf-render-three.d1671a80.js",
+    "@wgf/render-pixi": "wgf-render-pixi.e61e222b.js",
+    "es-module-shims": "es-module-shims.fe620c56.js",
+    "wgf-ui.css": "wgf-ui.6808e6f1.css"
+  }
+}

@@ -430,3 +430,5 @@ export {
   X as createGame,
   p as manifest
 };
+
+export const remoteCompat={"framework":"0.1.0","peers":{"@wgf/core":"0.1.0","@wgf/render-three":"0.1.0","three":"0.170.0"}};
