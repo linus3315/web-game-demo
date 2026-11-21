@@ -12,7 +12,7 @@
     "@wgf/render-pixi": "0.1.0"
   },
   "lobby": "1.0.0",
-  "build": "23aeccb1d27f",
+  "build": "83469d875832",
   "games": [
     {
       "id": "match3",
@@ -122,6 +122,8 @@
         "radius": 18,
         "font": "sans"
       },
+      "slug": "match-3",
+      "gameId": 1001,
       "version": "1.0.0",
       "remote": "games/match3/1.0.0/remote.733d7335.js",
       "framework": "0.1.0",
@@ -133,7 +135,7 @@
       "modules": [
         "shared/pixi.7aa2fd68.js",
         "games/match3/1.0.0/remote.733d7335.js",
-        "shared/wgf-core.bd0de5f7.js",
+        "shared/wgf-core.d20572e0.js",
         "shared/wgf-render-pixi.86f96202.js"
       ]
     },
@@ -291,6 +293,8 @@
         "radius": 16,
         "font": "serif"
       },
+      "slug": "memory",
+      "gameId": 1002,
       "version": "1.0.0",
       "remote": "games/memory/1.0.0/remote.84dd2f23.js",
       "framework": "0.1.0",
@@ -303,7 +307,7 @@
         "games/memory/1.0.0/remote.84dd2f23.js",
         "shared/jsx-runtime.aef77faa.js",
         "shared/react.712077b0.js",
-        "shared/wgf-core.bd0de5f7.js",
+        "shared/wgf-core.d20572e0.js",
         "shared/react-dom-client.d1aa5a88.js",
         "shared/react-dom.0773c5f5.js"
       ]
@@ -386,6 +390,8 @@
         "radius": 10,
         "font": "sans"
       },
+      "slug": "neon-rush",
+      "gameId": 1003,
       "version": "1.0.0",
       "remote": "games/neon-rush/1.0.0/remote.0c70e19b.js",
       "framework": "0.1.0",
@@ -397,7 +403,7 @@
       "modules": [
         "shared/three.f639f0a4.js",
         "games/neon-rush/1.0.0/remote.0c70e19b.js",
-        "shared/wgf-core.bd0de5f7.js",
+        "shared/wgf-core.d20572e0.js",
         "shared/wgf-render-three.d1671a80.js"
       ]
     },
@@ -483,17 +489,19 @@
         "radius": 18,
         "font": "serif"
       },
-      "version": "2.0.1",
-      "remote": "games/lucky-slots/2.0.1/remote.e258ce4a.js",
+      "slug": "lucky-lion",
+      "gameId": 2313,
+      "version": "2.0.2",
+      "remote": "games/lucky-slots/2.0.2/remote.48b000c1.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/lucky-slots/2.0.1/remote.21e1c833.css",
+      "css": "games/lucky-slots/2.0.2/remote.a41b447d.css",
       "modules": [
-        "games/lucky-slots/2.0.1/remote.e258ce4a.js",
-        "shared/wgf-core.bd0de5f7.js",
+        "games/lucky-slots/2.0.2/remote.48b000c1.js",
+        "shared/wgf-core.d20572e0.js",
         "shared/wgf-net.cc31a05c.js"
       ]
     },
@@ -596,6 +604,8 @@
         "radius": 20,
         "font": "serif"
       },
+      "slug": "starfall",
+      "gameId": 1004,
       "version": "1.0.0",
       "remote": "games/starfall/1.0.0/remote.ec6c7693.js",
       "framework": "0.1.0",
@@ -607,7 +617,7 @@
       "modules": [
         "shared/pixi.7aa2fd68.js",
         "games/starfall/1.0.0/remote.ec6c7693.js",
-        "shared/wgf-core.bd0de5f7.js",
+        "shared/wgf-core.d20572e0.js",
         "shared/wgf-render-pixi.86f96202.js"
       ]
     }
