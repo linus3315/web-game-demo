@@ -20,7 +20,7 @@
     "pixi.js": "pixi.7aa2fd68.js",
     "@wgf/core": "wgf-core.bd0de5f7.js",
     "@wgf/net": "wgf-net.cc31a05c.js",
-    "@wgf/ui": "wgf-ui.d50989e2.js",
+    "@wgf/ui": "wgf-ui.a44b2a32.js",
     "@wgf/render-three": "wgf-render-three.d1671a80.js",
     "@wgf/render-pixi": "wgf-render-pixi.86f96202.js",
     "es-module-shims": "es-module-shims.fe620c56.js",

@@ -8,7 +8,7 @@
     "pixi.js": "./shared/pixi.7aa2fd68.js",
     "@wgf/core": "./shared/wgf-core.bd0de5f7.js",
     "@wgf/net": "./shared/wgf-net.cc31a05c.js",
-    "@wgf/ui": "./shared/wgf-ui.d50989e2.js",
+    "@wgf/ui": "./shared/wgf-ui.a44b2a32.js",
     "@wgf/render-three": "./shared/wgf-render-three.d1671a80.js",
     "@wgf/render-pixi": "./shared/wgf-render-pixi.86f96202.js"
   }
