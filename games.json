@@ -12,7 +12,7 @@
     "@wgf/render-pixi": "0.1.0"
   },
   "lobby": "1.0.0",
-  "build": "4f278844b09d",
+  "build": "2b85f83604d6",
   "games": [
     {
       "id": "match3",
@@ -129,7 +129,13 @@
         "@wgf/core": "0.1.0",
         "@wgf/render-pixi": "0.1.0",
         "pixi.js": "8.23.0"
-      }
+      },
+      "modules": [
+        "shared/pixi.7aa2fd68.js",
+        "games/match3/1.0.0/remote.733d7335.js",
+        "shared/wgf-core.bd0de5f7.js",
+        "shared/wgf-render-pixi.86f96202.js"
+      ]
     },
     {
       "id": "memory",
@@ -292,7 +298,15 @@
         "@wgf/core": "0.1.0",
         "react": "18.3.1"
       },
-      "css": "games/memory/1.0.0/remote.5eac6975.css"
+      "css": "games/memory/1.0.0/remote.5eac6975.css",
+      "modules": [
+        "games/memory/1.0.0/remote.84dd2f23.js",
+        "shared/jsx-runtime.aef77faa.js",
+        "shared/react.712077b0.js",
+        "shared/wgf-core.bd0de5f7.js",
+        "shared/react-dom-client.d1aa5a88.js",
+        "shared/react-dom.0773c5f5.js"
+      ]
     },
     {
       "id": "neon-rush",
@@ -379,7 +393,13 @@
         "@wgf/core": "0.1.0",
         "@wgf/render-three": "0.1.0",
         "three": "0.170.0"
-      }
+      },
+      "modules": [
+        "shared/three.f639f0a4.js",
+        "games/neon-rush/1.0.0/remote.0c70e19b.js",
+        "shared/wgf-core.bd0de5f7.js",
+        "shared/wgf-render-three.d1671a80.js"
+      ]
     },
     {
       "id": "lucky-slots",
@@ -470,7 +490,12 @@
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/lucky-slots/1.0.0/remote.85246b93.css"
+      "css": "games/lucky-slots/1.0.0/remote.85246b93.css",
+      "modules": [
+        "games/lucky-slots/1.0.0/remote.fedb244c.js",
+        "shared/wgf-core.bd0de5f7.js",
+        "shared/wgf-net.cc31a05c.js"
+      ]
     },
     {
       "id": "starfall",
@@ -578,7 +603,13 @@
         "@wgf/core": "0.1.0",
         "@wgf/render-pixi": "0.1.0",
         "pixi.js": "8.23.0"
-      }
+      },
+      "modules": [
+        "shared/pixi.7aa2fd68.js",
+        "games/starfall/1.0.0/remote.ec6c7693.js",
+        "shared/wgf-core.bd0de5f7.js",
+        "shared/wgf-render-pixi.86f96202.js"
+      ]
     }
   ]
 }
