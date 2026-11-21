@@ -12,7 +12,7 @@
     "@wgf/render-pixi": "0.1.0"
   },
   "lobby": "1.0.0",
-  "build": "2b85f83604d6",
+  "build": "d74c6e31c58f",
   "games": [
     {
       "id": "match3",
@@ -484,15 +484,15 @@
         "font": "serif"
       },
       "version": "1.0.0",
-      "remote": "games/lucky-slots/1.0.0/remote.fedb244c.js",
+      "remote": "games/lucky-slots/1.0.0/remote.f682f2dd.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/lucky-slots/1.0.0/remote.85246b93.css",
+      "css": "games/lucky-slots/1.0.0/remote.7993515f.css",
       "modules": [
-        "games/lucky-slots/1.0.0/remote.fedb244c.js",
+        "games/lucky-slots/1.0.0/remote.f682f2dd.js",
         "shared/wgf-core.bd0de5f7.js",
         "shared/wgf-net.cc31a05c.js"
       ]
