@@ -12,7 +12,7 @@
     "@wgf/render-pixi": "0.1.0"
   },
   "lobby": "1.0.0",
-  "build": "aaf2eee9df41",
+  "build": "76525cb0cf60",
   "games": [
     {
       "id": "match3",
@@ -491,16 +491,16 @@
       },
       "slug": "lucky-lion",
       "gameId": 2313,
-      "version": "2.0.4",
-      "remote": "games/lucky-slots/2.0.4/remote.f008ac9b.js",
+      "version": "2.0.6",
+      "remote": "games/lucky-slots/2.0.6/remote.e4c76d03.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/lucky-slots/2.0.4/remote.66da71b3.css",
+      "css": "games/lucky-slots/2.0.6/remote.73d610d6.css",
       "modules": [
-        "games/lucky-slots/2.0.4/remote.f008ac9b.js",
+        "games/lucky-slots/2.0.6/remote.e4c76d03.js",
         "shared/wgf-core.d20572e0.js",
         "shared/wgf-net.cc31a05c.js"
       ]
