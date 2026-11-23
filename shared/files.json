@@ -18,12 +18,12 @@
     "react-dom/client": "react-dom-client.d1aa5a88.js",
     "three": "three.f639f0a4.js",
     "pixi.js": "pixi.7aa2fd68.js",
-    "@wgf/core": "wgf-core.493a7a73.js",
+    "@wgf/core": "wgf-core.8a51bfe0.js",
     "@wgf/net": "wgf-net.cc31a05c.js",
-    "@wgf/ui": "wgf-ui.a44b2a32.js",
+    "@wgf/ui": "wgf-ui.ee68abc2.js",
     "@wgf/render-three": "wgf-render-three.d84a3397.js",
     "@wgf/render-pixi": "wgf-render-pixi.3d53c363.js",
     "es-module-shims": "es-module-shims.fe620c56.js",
-    "wgf-ui.css": "wgf-ui.17a24193.css"
+    "wgf-ui.css": "wgf-ui.9a2b41f1.css"
   }
 }

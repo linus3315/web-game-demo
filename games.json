@@ -12,7 +12,7 @@
     "@wgf/render-pixi": "0.1.0"
   },
   "lobby": "1.0.0",
-  "build": "d60c78845414",
+  "build": "90c0c5a73f72",
   "games": [
     {
       "id": "match3",
@@ -135,7 +135,7 @@
       "modules": [
         "shared/pixi.7aa2fd68.js",
         "games/match3/1.0.1/remote.4be7fa7c.js",
-        "shared/wgf-core.493a7a73.js",
+        "shared/wgf-core.8a51bfe0.js",
         "shared/wgf-render-pixi.3d53c363.js"
       ]
     },
@@ -307,7 +307,7 @@
         "games/memory/1.0.1/remote.84dd2f23.js",
         "shared/jsx-runtime.aef77faa.js",
         "shared/react.712077b0.js",
-        "shared/wgf-core.493a7a73.js",
+        "shared/wgf-core.8a51bfe0.js",
         "shared/react-dom-client.d1aa5a88.js",
         "shared/react-dom.0773c5f5.js"
       ]
@@ -403,7 +403,7 @@
       "modules": [
         "shared/three.f639f0a4.js",
         "games/neon-rush/1.0.0/remote.0c70e19b.js",
-        "shared/wgf-core.493a7a73.js",
+        "shared/wgf-core.8a51bfe0.js",
         "shared/wgf-render-three.d84a3397.js"
       ]
     },
@@ -561,90 +561,93 @@
       "css": "games/plinko/1.0.5/remote.0075b0d2.css",
       "modules": [
         "games/plinko/1.0.5/remote.aa8990b8.js",
-        "shared/wgf-core.493a7a73.js",
+        "shared/wgf-core.8a51bfe0.js",
         "shared/wgf-net.cc31a05c.js"
       ]
     },
     {
       "id": "plinko-3d",
-      "name": "木珠",
-      "description": "木桌上的彩色积木钉。玻璃珠落到倍率槽。娱乐积分，不能兑换，也不能充值。",
-      "tip": "行数 8 到 16，风险分低中高。落点由服务器决定。",
-      "howToPlay": "选择注额、行数和风险，然后投放。珠子沿预定弹跳落下，最终槽位在出手时已经确定。可同时有多颗珠子在飞，每颗落地时结算。",
+      "name": "弹珠赛跑",
+      "description": "六颗玻璃弹珠在木制机关赛道上自动冲线。猜冠军、颜色或前三。娱乐积分，不能兑换。",
+      "tip": "比赛开始前选定注额和玩法。名次由服务器决定，赛道只负责表演。",
+      "howToPlay": "默认 6 颗编号弹珠。开赛前可以猜冠军号码、颜色、大小单双，或猜谁能进前三，可以同时下几注。点开始比赛后轨道自动跑完，约二十秒，快进是两倍速。没有操控。试玩地址加 ?debug=1 可以指定冠军。",
       "copy": {
         "en": {
-          "name": "Wood Plinko",
-          "description": "Colored blocks on a wooden table. A glass marble lands in a multiplier slot. Play credits only.",
-          "howToPlay": "Choose a stake, row count, and risk, then drop. The slot is fixed before the marble moves. Several marbles can be in flight; each one settles when it lands.",
-          "tip": "Rows run from 8 to 16. Risk is low, mid, or high."
+          "name": "Marble Race",
+          "description": "Six glass marbles race a wooden contraption on their own. Bet the winner, a colour, or the top three. Play credits only.",
+          "howToPlay": "Pick a stake and one or more bets, then start. The server chooses the finishing order and the track plays it out. Fast-forward is twice speed. Add ?debug=1 to force the winner in a demo.",
+          "tip": "The race is a spectator event. You cannot steer a marble."
         }
       },
       "cover": "plinko-3d",
       "art": {
-        "background": "#c4894a",
+        "background": "#8a552c",
         "shapes": [
           {
             "tag": "rect",
             "attrs": {
-              "x": 36,
-              "y": 28,
-              "width": 248,
-              "height": 168,
+              "x": 28,
+              "y": 36,
+              "width": 264,
+              "height": 150,
               "rx": 18,
-              "fill": "#a56b3c"
+              "fill": "#c4894a"
             }
           },
           {
             "tag": "rect",
             "attrs": {
-              "x": 78,
-              "y": 70,
-              "width": 18,
-              "height": 22,
+              "x": 48,
+              "y": 58,
+              "width": 224,
+              "height": 12,
               "rx": 6,
-              "fill": "#e23b3b"
-            }
-          },
-          {
-            "tag": "rect",
-            "attrs": {
-              "x": 118,
-              "y": 86,
-              "width": 18,
-              "height": 22,
-              "rx": 6,
-              "fill": "#f0d429"
-            }
-          },
-          {
-            "tag": "rect",
-            "attrs": {
-              "x": 158,
-              "y": 86,
-              "width": 18,
-              "height": 22,
-              "rx": 6,
-              "fill": "#3cbb4a"
-            }
-          },
-          {
-            "tag": "rect",
-            "attrs": {
-              "x": 198,
-              "y": 70,
-              "width": 18,
-              "height": 22,
-              "rx": 6,
-              "fill": "#3a7bff"
+              "fill": "#8d4e28"
             }
           },
           {
             "tag": "circle",
             "attrs": {
-              "cx": 160,
-              "cy": 58,
-              "r": 10,
-              "fill": "#f4fbff"
+              "cx": 78,
+              "cy": 96,
+              "r": 12,
+              "fill": "#e63946"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 114,
+              "cy": 108,
+              "r": 12,
+              "fill": "#1d70f5"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 150,
+              "cy": 90,
+              "r": 12,
+              "fill": "#f4c430"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 186,
+              "cy": 112,
+              "r": 12,
+              "fill": "#2ec27e"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 222,
+              "cy": 98,
+              "r": 12,
+              "fill": "#9b5de5"
             }
           },
           {
@@ -652,54 +655,43 @@
             "attrs": {
               "x": 70,
               "y": 150,
-              "width": 32,
-              "height": 18,
-              "rx": 6,
-              "fill": "#e23b3b"
+              "width": 18,
+              "height": 28,
+              "rx": 3,
+              "fill": "#ff7b00"
             }
           },
           {
             "tag": "rect",
             "attrs": {
-              "x": 108,
-              "y": 150,
-              "width": 32,
-              "height": 18,
-              "rx": 6,
-              "fill": "#f08a2a"
+              "x": 96,
+              "y": 146,
+              "width": 18,
+              "height": 32,
+              "rx": 3,
+              "fill": "#e63946"
             }
           },
           {
             "tag": "rect",
             "attrs": {
-              "x": 146,
-              "y": 150,
-              "width": 32,
-              "height": 18,
-              "rx": 6,
-              "fill": "#7ddec8"
+              "x": 122,
+              "y": 154,
+              "width": 18,
+              "height": 24,
+              "rx": 3,
+              "fill": "#f4c430"
             }
           },
           {
             "tag": "rect",
             "attrs": {
-              "x": 184,
-              "y": 150,
-              "width": 32,
-              "height": 18,
-              "rx": 6,
-              "fill": "#3a7bff"
-            }
-          },
-          {
-            "tag": "rect",
-            "attrs": {
-              "x": 222,
-              "y": 150,
-              "width": 32,
-              "height": 18,
-              "rx": 6,
-              "fill": "#8a4ad4"
+              "x": 200,
+              "y": 148,
+              "width": 64,
+              "height": 14,
+              "rx": 4,
+              "fill": "#f7f4ea"
             }
           }
         ]
@@ -713,25 +705,25 @@
       "theme": {
         "accent": "#f0a04b",
         "accentInk": "#2a160c",
-        "glow": "#e23b3b",
+        "glow": "#e63946",
         "radius": 18,
         "font": "sans"
       },
       "slug": "plinko-3d",
       "gameId": 1006,
-      "version": "1.0.5",
-      "remote": "games/plinko-3d/1.0.5/remote.84f087ec.js",
+      "version": "2.0.0",
+      "remote": "games/plinko-3d/2.0.0/remote.17f9bfcf.js",
       "framework": "0.1.0",
       "peers": {
-        "three": "0.170.0",
         "@wgf/core": "0.1.0",
-        "@wgf/net": "0.1.0"
+        "@wgf/net": "0.1.0",
+        "three": "0.170.0"
       },
-      "css": "games/plinko-3d/1.0.5/remote.d9f2fb49.css",
+      "css": "games/plinko-3d/2.0.0/remote.f95ada66.css",
       "modules": [
         "shared/three.f639f0a4.js",
-        "games/plinko-3d/1.0.5/remote.84f087ec.js",
-        "shared/wgf-core.493a7a73.js",
+        "games/plinko-3d/2.0.0/remote.17f9bfcf.js",
+        "shared/wgf-core.8a51bfe0.js",
         "shared/wgf-net.cc31a05c.js"
       ]
     },
@@ -829,7 +821,7 @@
       "css": "games/lucky-slots/2.0.8/remote.312daf41.css",
       "modules": [
         "games/lucky-slots/2.0.8/remote.6e52e8f3.js",
-        "shared/wgf-core.493a7a73.js",
+        "shared/wgf-core.8a51bfe0.js",
         "shared/wgf-net.cc31a05c.js"
       ]
     },
@@ -945,7 +937,7 @@
       "modules": [
         "shared/pixi.7aa2fd68.js",
         "games/starfall/1.0.0/remote.ec6c7693.js",
-        "shared/wgf-core.493a7a73.js",
+        "shared/wgf-core.8a51bfe0.js",
         "shared/wgf-render-pixi.3d53c363.js"
       ]
     }
