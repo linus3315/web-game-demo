@@ -10,7 +10,7 @@
     "@wgf/render-three": "0.1.0"
   },
   "lobby": "1.0.0",
-  "build": "2d4d7904a5b0",
+  "build": "adad3b160ca9",
   "games": [
     {
       "id": "neon-rush",
@@ -123,7 +123,7 @@
       },
       "cover": "plinko",
       "art": {
-        "background": "#272b2c",
+        "background": "#0a0a0a",
         "shapes": [
           {
             "tag": "circle",
@@ -131,7 +131,7 @@
               "cx": 160,
               "cy": 78,
               "r": 5,
-              "fill": "#f4f7f8"
+              "fill": "#f4f4f4"
             }
           },
           {
@@ -140,7 +140,7 @@
               "cx": 140,
               "cy": 108,
               "r": 5,
-              "fill": "#f4f7f8"
+              "fill": "#f4f4f4"
             }
           },
           {
@@ -149,7 +149,7 @@
               "cx": 180,
               "cy": 108,
               "r": 5,
-              "fill": "#f4f7f8"
+              "fill": "#f4f4f4"
             }
           },
           {
@@ -158,7 +158,7 @@
               "cx": 120,
               "cy": 138,
               "r": 5,
-              "fill": "#f4f7f8"
+              "fill": "#d0d0d0"
             }
           },
           {
@@ -167,7 +167,7 @@
               "cx": 160,
               "cy": 138,
               "r": 5,
-              "fill": "#f4f7f8"
+              "fill": "#d0d0d0"
             }
           },
           {
@@ -176,7 +176,7 @@
               "cx": 200,
               "cy": 138,
               "r": 5,
-              "fill": "#f4f7f8"
+              "fill": "#d0d0d0"
             }
           },
           {
@@ -187,7 +187,7 @@
               "width": 36,
               "height": 22,
               "rx": 8,
-              "fill": "#e23b3b"
+              "fill": "#f4f4f4"
             }
           },
           {
@@ -198,7 +198,7 @@
               "width": 36,
               "height": 22,
               "rx": 8,
-              "fill": "#f0b429"
+              "fill": "#8a8a8a"
             }
           },
           {
@@ -209,7 +209,7 @@
               "width": 36,
               "height": 22,
               "rx": 8,
-              "fill": "#7ddec8"
+              "fill": "#2e2e2e"
             }
           },
           {
@@ -220,7 +220,7 @@
               "width": 36,
               "height": 22,
               "rx": 8,
-              "fill": "#f0b429"
+              "fill": "#8a8a8a"
             }
           },
           {
@@ -231,7 +231,7 @@
               "width": 36,
               "height": 22,
               "rx": 8,
-              "fill": "#e23b3b"
+              "fill": "#f4f4f4"
             }
           }
         ]
@@ -243,24 +243,24 @@
         "联网"
       ],
       "theme": {
-        "accent": "#7ddec8",
-        "accentInk": "#10211e",
-        "glow": "#e23b3b",
+        "accent": "#fafafa",
+        "accentInk": "#0a0a0a",
+        "glow": "#2e2e2e",
         "radius": 16,
         "font": "sans"
       },
       "slug": "plinko",
       "gameId": 1005,
-      "version": "1.0.5",
-      "remote": "games/plinko/1.0.5/remote.aa8990b8.js",
+      "version": "1.0.6",
+      "remote": "games/plinko/1.0.6/remote.71a0e3dc.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/plinko/1.0.5/remote.0075b0d2.css",
+      "css": "games/plinko/1.0.6/remote.2d2897e5.css",
       "modules": [
-        "games/plinko/1.0.5/remote.aa8990b8.js",
+        "games/plinko/1.0.6/remote.71a0e3dc.js",
         "shared/wgf-core.90698a91.js",
         "shared/wgf-net.cc31a05c.js"
       ]
