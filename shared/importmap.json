@@ -5,11 +5,9 @@
     "react-dom": "./shared/react-dom.0773c5f5.js",
     "react-dom/client": "./shared/react-dom-client.d1aa5a88.js",
     "three": "./shared/three.f639f0a4.js",
-    "pixi.js": "./shared/pixi.7aa2fd68.js",
     "@wgf/core": "./shared/wgf-core.90698a91.js",
     "@wgf/net": "./shared/wgf-net.cc31a05c.js",
     "@wgf/ui": "./shared/wgf-ui.ee68abc2.js",
-    "@wgf/render-three": "./shared/wgf-render-three.d84a3397.js",
-    "@wgf/render-pixi": "./shared/wgf-render-pixi.3d53c363.js"
+    "@wgf/render-three": "./shared/wgf-render-three.d84a3397.js"
   }
 }
