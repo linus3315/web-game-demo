@@ -18,7 +18,7 @@
     "react-dom/client": "react-dom-client.d1aa5a88.js",
     "three": "three.f639f0a4.js",
     "pixi.js": "pixi.7aa2fd68.js",
-    "@wgf/core": "wgf-core.8a51bfe0.js",
+    "@wgf/core": "wgf-core.90698a91.js",
     "@wgf/net": "wgf-net.cc31a05c.js",
     "@wgf/ui": "wgf-ui.ee68abc2.js",
     "@wgf/render-three": "wgf-render-three.d84a3397.js",
