@@ -12,7 +12,7 @@
     "@wgf/render-pixi": "0.1.0"
   },
   "lobby": "1.0.0",
-  "build": "ae1e457c5356",
+  "build": "42ba4ef139dc",
   "games": [
     {
       "id": "match3",
@@ -551,16 +551,16 @@
       },
       "slug": "plinko",
       "gameId": 1005,
-      "version": "1.0.0",
-      "remote": "games/plinko/1.0.0/remote.4ea47f4e.js",
+      "version": "1.0.1",
+      "remote": "games/plinko/1.0.1/remote.e402a36e.js",
       "framework": "0.1.0",
       "peers": {
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/plinko/1.0.0/remote.72559264.css",
+      "css": "games/plinko/1.0.1/remote.1fae4d4d.css",
       "modules": [
-        "games/plinko/1.0.0/remote.4ea47f4e.js",
+        "games/plinko/1.0.1/remote.e402a36e.js",
         "shared/wgf-core.493a7a73.js",
         "shared/wgf-net.cc31a05c.js"
       ]
@@ -719,18 +719,18 @@
       },
       "slug": "plinko-3d",
       "gameId": 1006,
-      "version": "1.0.0",
-      "remote": "games/plinko-3d/1.0.0/remote.3c52d60c.js",
+      "version": "1.0.1",
+      "remote": "games/plinko-3d/1.0.1/remote.34890e07.js",
       "framework": "0.1.0",
       "peers": {
         "three": "0.170.0",
         "@wgf/core": "0.1.0",
         "@wgf/net": "0.1.0"
       },
-      "css": "games/plinko-3d/1.0.0/remote.65658f9c.css",
+      "css": "games/plinko-3d/1.0.1/remote.eb41e0c5.css",
       "modules": [
         "shared/three.f639f0a4.js",
-        "games/plinko-3d/1.0.0/remote.3c52d60c.js",
+        "games/plinko-3d/1.0.1/remote.34890e07.js",
         "shared/wgf-core.493a7a73.js",
         "shared/wgf-net.cc31a05c.js"
       ]
