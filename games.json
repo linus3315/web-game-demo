@@ -12,7 +12,7 @@
     "@wgf/render-pixi": "0.1.0"
   },
   "lobby": "1.0.0",
-  "build": "8bd12a238bb1",
+  "build": "ae1e457c5356",
   "games": [
     {
       "id": "match3",
@@ -405,6 +405,334 @@
         "games/neon-rush/1.0.0/remote.0c70e19b.js",
         "shared/wgf-core.493a7a73.js",
         "shared/wgf-render-three.d84a3397.js"
+      ]
+    },
+    {
+      "id": "plinko",
+      "name": "弹珠",
+      "description": "白钉三角阵。球落到倍率槽。娱乐积分，不能兑换，也不能充值。",
+      "tip": "行数 8 到 16，风险分低中高。落点由服务器决定。",
+      "howToPlay": "选择注额、行数和风险，然后投放。球沿预定弹跳落下，最终槽位在出手时已经确定。可同时有多颗球在飞，每颗落地时结算。",
+      "copy": {
+        "en": {
+          "name": "Plinko",
+          "description": "A triangle of white pegs. The ball lands in a multiplier bucket. Play credits only.",
+          "howToPlay": "Choose a stake, row count, and risk, then drop. The bucket is fixed before the ball moves. Several balls can be in flight; each one settles when it lands.",
+          "tip": "Rows run from 8 to 16. Risk is low, mid, or high."
+        }
+      },
+      "cover": "plinko",
+      "art": {
+        "background": "#272b2c",
+        "shapes": [
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 160,
+              "cy": 78,
+              "r": 5,
+              "fill": "#f4f7f8"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 140,
+              "cy": 108,
+              "r": 5,
+              "fill": "#f4f7f8"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 180,
+              "cy": 108,
+              "r": 5,
+              "fill": "#f4f7f8"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 120,
+              "cy": 138,
+              "r": 5,
+              "fill": "#f4f7f8"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 160,
+              "cy": 138,
+              "r": 5,
+              "fill": "#f4f7f8"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 200,
+              "cy": 138,
+              "r": 5,
+              "fill": "#f4f7f8"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 70,
+              "y": 176,
+              "width": 36,
+              "height": 22,
+              "rx": 8,
+              "fill": "#e23b3b"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 112,
+              "y": 176,
+              "width": 36,
+              "height": 22,
+              "rx": 8,
+              "fill": "#f0b429"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 154,
+              "y": 176,
+              "width": 36,
+              "height": 22,
+              "rx": 8,
+              "fill": "#7ddec8"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 196,
+              "y": 176,
+              "width": 36,
+              "height": 22,
+              "rx": 8,
+              "fill": "#f0b429"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 238,
+              "y": 176,
+              "width": 36,
+              "height": 22,
+              "rx": 8,
+              "fill": "#e23b3b"
+            }
+          }
+        ]
+      },
+      "renderer": "dom",
+      "controls": "pointer",
+      "tags": [
+        "弹珠",
+        "联网"
+      ],
+      "theme": {
+        "accent": "#7ddec8",
+        "accentInk": "#10211e",
+        "glow": "#e23b3b",
+        "radius": 16,
+        "font": "sans"
+      },
+      "slug": "plinko",
+      "gameId": 1005,
+      "version": "1.0.0",
+      "remote": "games/plinko/1.0.0/remote.4ea47f4e.js",
+      "framework": "0.1.0",
+      "peers": {
+        "@wgf/core": "0.1.0",
+        "@wgf/net": "0.1.0"
+      },
+      "css": "games/plinko/1.0.0/remote.72559264.css",
+      "modules": [
+        "games/plinko/1.0.0/remote.4ea47f4e.js",
+        "shared/wgf-core.493a7a73.js",
+        "shared/wgf-net.cc31a05c.js"
+      ]
+    },
+    {
+      "id": "plinko-3d",
+      "name": "木珠",
+      "description": "木桌上的彩色积木钉。玻璃珠落到倍率槽。娱乐积分，不能兑换，也不能充值。",
+      "tip": "行数 8 到 16，风险分低中高。落点由服务器决定。",
+      "howToPlay": "选择注额、行数和风险，然后投放。珠子沿预定弹跳落下，最终槽位在出手时已经确定。可同时有多颗珠子在飞，每颗落地时结算。",
+      "copy": {
+        "en": {
+          "name": "Wood Plinko",
+          "description": "Colored blocks on a wooden table. A glass marble lands in a multiplier slot. Play credits only.",
+          "howToPlay": "Choose a stake, row count, and risk, then drop. The slot is fixed before the marble moves. Several marbles can be in flight; each one settles when it lands.",
+          "tip": "Rows run from 8 to 16. Risk is low, mid, or high."
+        }
+      },
+      "cover": "plinko-3d",
+      "art": {
+        "background": "#c4894a",
+        "shapes": [
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 36,
+              "y": 28,
+              "width": 248,
+              "height": 168,
+              "rx": 18,
+              "fill": "#a56b3c"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 78,
+              "y": 70,
+              "width": 18,
+              "height": 22,
+              "rx": 6,
+              "fill": "#e23b3b"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 118,
+              "y": 86,
+              "width": 18,
+              "height": 22,
+              "rx": 6,
+              "fill": "#f0d429"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 158,
+              "y": 86,
+              "width": 18,
+              "height": 22,
+              "rx": 6,
+              "fill": "#3cbb4a"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 198,
+              "y": 70,
+              "width": 18,
+              "height": 22,
+              "rx": 6,
+              "fill": "#3a7bff"
+            }
+          },
+          {
+            "tag": "circle",
+            "attrs": {
+              "cx": 160,
+              "cy": 58,
+              "r": 10,
+              "fill": "#f4fbff"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 70,
+              "y": 150,
+              "width": 32,
+              "height": 18,
+              "rx": 6,
+              "fill": "#e23b3b"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 108,
+              "y": 150,
+              "width": 32,
+              "height": 18,
+              "rx": 6,
+              "fill": "#f08a2a"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 146,
+              "y": 150,
+              "width": 32,
+              "height": 18,
+              "rx": 6,
+              "fill": "#7ddec8"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 184,
+              "y": 150,
+              "width": 32,
+              "height": 18,
+              "rx": 6,
+              "fill": "#3a7bff"
+            }
+          },
+          {
+            "tag": "rect",
+            "attrs": {
+              "x": 222,
+              "y": 150,
+              "width": 32,
+              "height": 18,
+              "rx": 6,
+              "fill": "#8a4ad4"
+            }
+          }
+        ]
+      },
+      "renderer": "three",
+      "controls": "pointer",
+      "tags": [
+        "弹珠",
+        "联网"
+      ],
+      "theme": {
+        "accent": "#f0a04b",
+        "accentInk": "#2a160c",
+        "glow": "#e23b3b",
+        "radius": 18,
+        "font": "sans"
+      },
+      "slug": "plinko-3d",
+      "gameId": 1006,
+      "version": "1.0.0",
+      "remote": "games/plinko-3d/1.0.0/remote.3c52d60c.js",
+      "framework": "0.1.0",
+      "peers": {
+        "three": "0.170.0",
+        "@wgf/core": "0.1.0",
+        "@wgf/net": "0.1.0"
+      },
+      "css": "games/plinko-3d/1.0.0/remote.65658f9c.css",
+      "modules": [
+        "shared/three.f639f0a4.js",
+        "games/plinko-3d/1.0.0/remote.3c52d60c.js",
+        "shared/wgf-core.493a7a73.js",
+        "shared/wgf-net.cc31a05c.js"
       ]
     },
     {
