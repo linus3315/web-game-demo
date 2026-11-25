@@ -1,6 +1,6 @@
 {
   "lobby": "1.0.0",
-  "build": "60c27d131b76",
+  "build": "47bc2ce98a4e",
   "games": [
     {
       "id": "neon-rush",
@@ -84,7 +84,7 @@
       "slug": "neon-rush",
       "gameId": 1003,
       "launchUrl": "/web-game-demo/games/neon-rush/",
-      "aspect": 2.2
+      "aspect": 2
     },
     {
       "id": "lucky-slots",
@@ -320,7 +320,7 @@
       "slug": "plinko",
       "gameId": 1005,
       "launchUrl": "/web-game-demo/games/plinko/",
-      "aspect": 2
+      "aspect": 1.75
     }
   ]
 }
