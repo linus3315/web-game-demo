@@ -1,6 +1,6 @@
 {
   "lobby": "1.0.0",
-  "build": "47bc2ce98a4e",
+  "build": "e2e77b3ff37b",
   "games": [
     {
       "id": "neon-rush",
@@ -83,8 +83,7 @@
       "version": "1.0.0",
       "slug": "neon-rush",
       "gameId": 1003,
-      "launchUrl": "/web-game-demo/games/neon-rush/",
-      "aspect": 2
+      "launchUrl": "/web-game-demo/games/neon-rush/"
     },
     {
       "id": "lucky-slots",
@@ -171,8 +170,7 @@
       "version": "2.0.8",
       "slug": "lucky-lion",
       "gameId": 2313,
-      "launchUrl": "/web-game-demo/games/lucky-lion/",
-      "aspect": 1.78
+      "launchUrl": "/web-game-demo/games/lucky-lion/"
     },
     {
       "id": "plinko",
@@ -319,8 +317,7 @@
       "version": "1.0.6",
       "slug": "plinko",
       "gameId": 1005,
-      "launchUrl": "/web-game-demo/games/plinko/",
-      "aspect": 1.75
+      "launchUrl": "/web-game-demo/games/plinko/"
     }
   ]
 }
